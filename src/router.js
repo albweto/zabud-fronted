@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import ListClient from './views/ListClient.vue'
+import ListProducts from './views/ListProducts.vue'
+import addclient from './views/AddClient.vue'
 
 Vue.use(Router)
 
@@ -10,6 +13,21 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/client',
+      name: 'list-clients',
+      component: ListClient
+    },
+    {
+      path: '/products',
+      name: 'list-products',
+      component: ListProducts
+    },
+    {
+      path: '/newClient',
+      name: 'new-client',
+      component: addclient
     },
     {
       path: '/about',
